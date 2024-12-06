@@ -1,0 +1,13 @@
+.mynav{
+    display: flex;
+    justify-content: space-around;
+    background-color: burlywood
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: red;
+
+}
