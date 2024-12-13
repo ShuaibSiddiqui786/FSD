@@ -1,37 +1,39 @@
-import './App.css'
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-import MainLayout from './components/MainLayout';
-import Login from './components/Login';
-import Registration from './components/Registration';
-import Dashboard from './components/Dashboard';
-import { useState } from 'react';
+import React from "react";
+import Map from "./components/Map";
 
+// function App() {
+//   // const [store ,setStore]=useState("");
+
+//   return (
+//     // <>
+//     <div> App
+//       {/* {JSON.stringify(store)}
+//       <BrowserRouter>
+//       <Routes>
+
+//         <Route path="/" element={<MainLayout/>}>
+//           <Route path="/login" element={<Login regDataLogin={store}/>}/>
+//           <Route path="/registration" element={<Registration regData={setStore}/>}/>
+//           {/* <Route path="/dashboard" element={<Dashboard/>}/> */}
+//         </Route>
+//       </Routes>
+
+//       <Routes>
+//         <Route path="/dashboard" element={<Dashboard/>}></Route>
+//       </Routes>
+//       </BrowserRouter> */}
+//     </div>
+  
+//     {/* </> */}
+//   )
+// }
+
+// export default App
 
 function App() {
-  const [store ,setStore]=useState("");
-
   return (
-    <>
-    <div>
-      {JSON.stringify(store)}
-      <BrowserRouter>
-      <Routes>
-
-        <Route path="/" element={<MainLayout/>}>
-          <Route path="/login" element={<Login regDataLogin={store}/>}/>
-          <Route path="/registration" element={<Registration regData={setStore}/>}/>
-          {/* <Route path="/dashboard" element={<Dashboard/>}/> */}
-        </Route>
-      </Routes>
-
-      <Routes>
-        <Route path="/dashboard" element={<Dashboard/>}></Route>
-      </Routes>
-      </BrowserRouter>
-    </div>
-  
-    </>
+    <div><Map/></div>
   )
 }
 
-export default App
+export default App
